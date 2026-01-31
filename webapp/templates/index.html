@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HtS Corporations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HtS Corporations</h1>
+            <p class="subtitle">Explore our comprehensive database of companies</p>
+        </header>
+        
+        <main>
+            {% if corporations %}
+                <div class="scroll-container">
+                    <div class="corporations-grid">
+                        {% for corp in corporations %}
+                            <div class="corporation-card">
+                                <div class="corporation-name">
+                                    {% if corp.company %}
+                                        {{ corp.company }}
+                                    {% elif corp.name %}
+                                        {{ corp.name }}
+                                    {% elif corp.company_name %}
+                                        {{ corp.company_name }}
+                                    {% elif corp.title %}
+                                        {{ corp.title }}
+                                    {% else %}
+                                        Untitled Corporation
+                                    {% endif %}
+                                </div>
+                                <div class="corporation-details">
+                                    {% if corp.rank %}
+                                        <div class="detail-item">
+                                            <span class="detail-label">Rank:</span>
+                                            <span class="detail-value">#{{ corp.rank }}</span>
+                                        </div>
+                                    {% endif %}
+                                    
+                                    {% if corp.ticker %}
+                                        <div class="detail-item">
+                                            <span class="detail-label">Ticker:</span>
+                                            <span class="detail-value">{{ corp.ticker }}</span>
+                                        </div>
+                                    {% endif %}
+                                    
+                                    {% if corp.ir_page %}
+                                        <div class="detail-item">
+                                            <span class="detail-label">Investor Relations:</span>
+                                            <span class="detail-value">
+                                                <a href="{{ corp.ir_page }}" target="_blank" style="color: #00ED64;">Visit Site</a>
+                                            </span>
+                                        </div>
+                                    {% endif %}
+                                    
+                                    {% if corp.latest_earnings %}
+                                        <div class="detail-item">
+                                            <span class="detail-label">Latest Earnings:</span>
+                                            <span class="detail-value">{{ corp.latest_earnings.period }}</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <span class="detail-label">Earnings Date:</span>
+                                            <span class="detail-value">{{ corp.latest_earnings.date }}</span>
+                                        </div>
+                                        {% if corp.latest_earnings.document_url %}
+                                        <div class="detail-item">
+                                            <span class="detail-label">Earnings Report:</span>
+                                            <span class="detail-value">
+                                                <a href="{{ corp.latest_earnings.document_url }}" target="_blank" style="color: #00ED64;">View PDF</a>
+                                            </span>
+                                        </div>
+                                        {% endif %}
+                                    {% endif %}
+                                    
+                                    <div class="detail-item">
+                                        <span class="detail-label">ID:</span>
+                                        <span class="detail-value">{{ corp._id }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% else %}
+                <div class="no-data">
+                    <h2>No corporations found</h2>
+                    <p>Unable to retrieve corporation data from the database.</p>
+                </div>
+            {% endif %}
+        </main>
+    </div>
+</body>
+</html>

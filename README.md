@@ -23,3 +23,9 @@ This is an example of a web app "Vibe coded" using the Gemini CLI.  It successfu
 ## assets
 Contains some Creative Commons licensed images used for the voyage_search demo
 
+
+## connect.sh
+Small bash script to open a `mongosh` connection to your configured cluster and database
+
+## import.sh
+Bash script to import the corporation data into the cluster
