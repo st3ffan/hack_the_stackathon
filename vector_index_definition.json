@@ -1,0 +1,18 @@
+{
+  "name": "default",
+  "collectionName": "image_embeddings",
+  "database": "hts",
+  "definition": {
+    "mappings": {
+      "dynamic": true,
+      "fields": {
+        "vector": {
+          "numDimensions": 1024,
+          "quantization": "scalar",
+          "similarity": "cosine",
+          "type": "vector"
+        }
+      }
+    }
+  }
+}

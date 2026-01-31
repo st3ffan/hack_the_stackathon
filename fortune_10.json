@@ -1,0 +1,112 @@
+[
+  {
+    "company": "Walmart",
+    "rank": 1,
+    "ticker": "WMT",
+    "ir_page": "https://investors.walmart.com",
+    "latest_earnings": {
+      "period": "Q4 FY25 (Fiscal Year ending Jan 31, 2025)",
+      "date": "February 20, 2025",
+      "document_url": "https://stock.walmart.com/_assets/_b7bad52767fd931c1359035907b625a8/walmart/db/938/9939/earnings_release/Earnings+Release+(FY25+Q4).pdf"
+    }
+  },
+  {
+    "company": "Amazon",
+    "rank": 2,
+    "ticker": "AMZN",
+    "ir_page": "https://ir.aboutamazon.com",
+    "latest_earnings": {
+      "period": "Q4 2024",
+      "date": "February 6, 2025",
+      "document_url": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Fourth-Quarter-Results/default.aspx"
+    }
+  },
+  {
+    "company": "UnitedHealth Group",
+    "rank": 3,
+    "ticker": "UNH",
+    "ir_page": "https://investors.unitedhealthgroup.com",
+    "latest_earnings": {
+      "period": "Q4 2024 (Full Year 2024)",
+      "date": "January 16, 2025",
+      "document_url": "https://www.unitedhealthgroup.com/newsroom/2025/2025-16-01-uhg-reports-fourth-quarter-results.html"
+    }
+  },
+  {
+    "company": "Apple",
+    "rank": 4,
+    "ticker": "AAPL",
+    "ir_page": "https://investor.apple.com",
+    "latest_earnings": {
+      "period": "Q1 FY25 (Fiscal Quarter ending Dec 28, 2024)",
+      "date": "January 30, 2025",
+      "document_url": "https://www.apple.com/newsroom/2025/01/apple-reports-first-quarter-results/"
+    }
+  },
+  {
+    "company": "CVS Health",
+    "rank": 5,
+    "ticker": "CVS",
+    "ir_page": "https://ir.cvshealth.com",
+    "latest_earnings": {
+      "period": "Q4 2024 (Full Year 2024)",
+      "date": "February 12, 2025",
+      "document_url": "https://investors.cvshealth.com/news/news-details/2025/CVS-HEALTH-CORPORATION-REPORTS-FOURTH-QUARTER-AND-FULL-YEAR-2024-RESULTS/default.aspx"
+    }
+  },
+  {
+    "company": "Berkshire Hathaway",
+    "rank": 6,
+    "ticker": "BRK.B",
+    "ir_page": "https://www.berkshirehathaway.com/investor.html",
+    "latest_earnings": {
+      "period": "Q4 2024 (Full Year 2024)",
+      "date": "February 22, 2025",
+      "document_url": "https://berkshirehathaway.com/news/feb2225.pdf"
+    }
+  },
+  {
+    "company": "Alphabet",
+    "rank": 7,
+    "ticker": "GOOGL",
+    "ir_page": "https://abc.xyz/investor",
+    "latest_earnings": {
+      "period": "Q4 2024 (Full Year 2024)",
+      "date": "February 4, 2025",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000010/googexhibit991q42024.htm"
+    }
+  },
+  {
+    "company": "Exxon Mobil",
+    "rank": 8,
+    "ticker": "XOM",
+    "ir_page": "https://investors.exxonmobil.com",
+    "latest_earnings": {
+      "period": "Q4 2024 (Full Year 2024)",
+      "date": "January 31, 2025",
+      "document_url": "https://investor.exxonmobil.com/company-information/press-releases/detail/1180/exxonmobil-announces-2024-results"
+    }
+  },
+  {
+    "company": "McKesson",
+    "rank": 9,
+    "ticker": "MCK",
+    "ir_page": "https://investors.mckesson.com",
+    "latest_earnings": {
+      "period": "Q3 FY25 (Fiscal Quarter ending Dec 31, 2024)",
+      "date": "February 5, 2025",
+      "document_url": "https://www.mckesson.com/about-us/newsroom/press-releases/2025/mckesson-corporation-reports-fiscal-2025-third-quarter-results/"
+    }
+  },
+  {
+    "company": "Cencora",
+    "rank": 10,
+    "ticker": "COR",
+    "ir_page": "https://investors.cencora.com",
+    "latest_earnings": {
+      "period": "Q1 FY25 (Fiscal Quarter ending Dec 31, 2024)",
+      "date": "February 5, 2025",
+      "document_url": "https://investor.cencora.com/news/news-details/2025/Cencora-Reports-Fiscal-2025-First-Quarter-Results/default.aspx"
+    }
+  }
+]
